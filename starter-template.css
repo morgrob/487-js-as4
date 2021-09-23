@@ -12,6 +12,26 @@ a, a:hover {
 /* .box {
   min-height: 100px;
 } */
+#pie1 {
+  opacity: 1;
+  width: 130px;
+  margin-top: -140px;
+  margin-left: -5px;
+}
+#pie2 {
+  opacity: 1;
+  width: 130px;
+  margin-top: -70px;
+  transform: translateY(-15px);
+  margin-left: -5px;
+}
+#channels {
+  margin-bottom: 120px;
+}
+#referrals {
+  margin-bottom: 70px;
+  transform: translateY(-20px);
+}
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;

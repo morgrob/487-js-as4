@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/eov4ujf.css">
 
   </head>
@@ -180,12 +181,16 @@
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-12 pie">
+                  <span class="tooltip tooltip-1" title="My tooltip">Hover me!</span>
+                  <span class="tooltip second-tooltip" title="My tooltip">Hover me!</span>
+
                   <div class="container">
                   <div class="pie1">  
-                  <h6>CHANNELS</h6>
-                  <img src="./images/analytics-channels.png" alt="Channels Pie Graph"></div>
-                  <div class="pie2"><h6>REFERRALS</h6>
-                  <img src="./images/analytics-referrals.png" alt="Referrals Pie Graph"></div>
+                  <h6 id="channels">CHANNELS</h6>
+                  <img class="first-tooltip" data-jbox-title="Twitter" data-jbox-content="27 followers, 15 retweets, 4 favorites" id="pie1" src="./images/analytics-channels.png" alt="Channels Pie Graph"></div>
+                  <div class="pie2">
+                  <h6 id="referrals">REFERRALS</h6>
+                  <img class="second-tooltip" data-jbox-title="Facebook" data-jbox-content="41 followers, 22 shares, 100 likes" id="pie2" src="./images/analytics-referrals.png" alt="Referrals Pie Graph"></div>
                   </div>
                 </div>
               </div>
@@ -342,9 +347,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+
+    <script src="main.js"></script>
   </body>
 </html>
