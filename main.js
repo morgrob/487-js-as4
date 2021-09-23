@@ -1,6 +1,19 @@
 
-$( document ).ready(function() {
+jQuery( document ).ready(function($) {
     console.log( "ready!" );
+
+    $('.my-news-ticker').AcmeTicker({
+        type: 'horizontal',
+        direction: 'right',
+        autoplay: 3500,
+        speed: 1000,
+        controls: {
+          prev: $('.acme-news-ticker-prev'),
+          toggle: $('.acme-news-ticker-pause'),
+          next: $('.acme-news-ticker-next')
+        }
+      });
+  
 });
 
 new jBox('Tooltip', {
@@ -28,3 +41,10 @@ new jBox('Tooltip', {
     getTitle: 'data-jbox-title',
     getContent: 'data-jbox-content'
   });
+
+        
+        
+        
+        
+        
+    

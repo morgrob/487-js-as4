@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="ticker.css" />
     <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/eov4ujf.css">
 
@@ -66,16 +67,40 @@
           <div class="col-md-12 box tan-box">
             <div class="row announcements">
               <div class="col-md-2 col-sm-6 title"><h6>ANNOUNCEMENTS</h6></div>
-              <div class="col-md-9 col-sm-6 body"><p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</p></div>
+              <!-- <div class="col-md-9 col-sm-6 body"><p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</p></div>
               <div class="col-md-1 announce-nav">
                 <ul id="announce-arrows">
                   <a href="#"><li id="announce-left-arrow"></li></a>
                   <a href="#"><li id="announce-right-arrow"></li></a>
                 </ul>
-              </div>
+              </div> -->
+              <div class="col-md-10 acme-news-ticker">
+            <!-- <div class="acme-news-ticker-label">News Ticker Label</div> -->
+            <div class="acme-news-ticker-box">
+              <ul class="my-news-ticker">
+                <li>
+                  <a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                </li>
+                <li>
+                  <a href="#">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</a>
+                </li>
+                <li>
+                  <a href="#">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</a>
+                </li>
+              </ul>
+            </div>
+            <div class="acme-news-ticker-controls acme-news-ticker-horizontal-controls">
+              <span class="acme-news-ticker-arrow acme-news-ticker-prev" id="announce-left-arrow"></span>
+              <span class="acme-news-ticker-pause"></span>
+              <span class="acme-news-ticker-arrow acme-news-ticker-next" id="announce-right-arrow"></span>
+            </div>
+            </div>
             </div>
           </div>
         </div>
+
+        
+          
 
         <div class="row">
           <div class="col-md-4 col-sm-12">
@@ -350,6 +375,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
 
+    <script src="jquery.js"></script>
+    <script src="acmeticker.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

@@ -236,14 +236,14 @@ a, a:hover {
   width: 29px;
   height: 22px;
   background-position: -389px -5px;
-  margin-left: -40px;
+  /* margin-left: -40px; */
 }
 #announce-right-arrow {
   background: url(./images/spritesheet.png);
   width: 26px;
   height: 22px;
   background-position: -428px -5px;
-  margin-left: -12px;
+  /* margin-left: -12px; */
 }
 #announce-left-arrow:hover, #announce-right-arrow:hover {
   transform: scale(1.3);
